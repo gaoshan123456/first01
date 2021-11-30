@@ -55,7 +55,7 @@ public class MyService extends Service {
         PendingIntent pi=PendingIntent.getActivity(this,0,intent,0);
         Notification notification=new NotificationCompat.Builder(this,CHANNEL_ID)
                       .setContentTitle("this is content title")
-                       .setContentText("this is content text")
+                       .setContentText("this is content text！")
                        .setWhen(System.currentTimeMillis())
                        .setSmallIcon(R.mipmap.ic_launcher)
                         .setLargeIcon(BitmapFactory.decodeResource(getResources(),R.mipmap.ic_launcher))
